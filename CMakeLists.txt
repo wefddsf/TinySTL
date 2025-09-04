@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.28)
+project(TinySTL)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_COMPILER g++)
+add_executable(main)
+aux_source_directory(src SRC)
+# target_include_directories(main PUBLIC ./STL)
+target_sources(main PUBLIC ${SRC})

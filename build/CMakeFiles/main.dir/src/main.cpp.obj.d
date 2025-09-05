@@ -132,4 +132,8 @@ CMakeFiles/main.dir/src/main.cpp.obj: \
  C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/basic_ios.tcc \
  C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/ostream.tcc \
  C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/istream \
- C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/istream.tcc
+ C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/istream.tcc \
+ C:/Users/25756/Desktop/TinySTL/STL/type_traits.h \
+ C:/Users/25756/Desktop/TinySTL/STL/util.h \
+ C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstddef \
+ C:/Users/25756/Desktop/TinySTL/STL/type_traits.h

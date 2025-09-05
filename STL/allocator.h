@@ -1,6 +1,9 @@
 #ifndef TINYSTL_ALLOCATOR_H_
 #define TINYSTL_ALLOCATOR_H_
 
+#include "construct.h"
+#include "util.h"
+
 namespace tinystl
 {
 

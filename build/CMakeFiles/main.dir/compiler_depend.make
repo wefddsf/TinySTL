@@ -56,6 +56,7 @@ CMakeFiles/main.dir/src/main.cpp.obj: C:/Users/25756/Desktop/TinySTL/src/main.cp
   C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cctype \
   C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cerrno \
   C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/clocale \
+  C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstddef \
   C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdio \
   C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdlib \
   C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwchar \
@@ -134,7 +135,9 @@ CMakeFiles/main.dir/src/main.cpp.obj: C:/Users/25756/Desktop/TinySTL/src/main.cp
   C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/time.h \
   C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/wchar.h \
-  C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/wctype.h
+  C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/25756/Desktop/TinySTL/STL/type_traits.h \
+  C:/Users/25756/Desktop/TinySTL/STL/util.h
 
 
 C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_construct.h:
@@ -143,11 +146,11 @@ C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwchar
 
 C:/Users/25756/Desktop/TinySTL/src/main.cpp:
 
+C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ext/atomicity.h:
+
 C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/backward/binders.h:
 
 C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/new_allocator.h:
-
-C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ext/atomicity.h:
 
 C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/alloc_traits.h:
 
@@ -239,6 +242,10 @@ C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/l
 
 C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/localefwd.h:
 
+C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
+
+C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstddef:
+
 C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/swprintf.inl:
 
 C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/memoryfwd.h:
@@ -321,8 +328,6 @@ C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/typein
 
 C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h:
 
-C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
-
 C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
 
 C:/Program\ Files/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
@@ -404,3 +409,7 @@ C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/vadefs.h:
 C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/wchar.h:
 
 C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/wctype.h:
+
+C:/Users/25756/Desktop/TinySTL/STL/type_traits.h:
+
+C:/Users/25756/Desktop/TinySTL/STL/util.h:

@@ -136,6 +136,7 @@ CMakeFiles/main.dir/src/main.cpp.obj: C:/Users/25756/Desktop/TinySTL/src/main.cp
   C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/25756/Desktop/TinySTL/STL/iterator.h \
   C:/Users/25756/Desktop/TinySTL/STL/type_traits.h \
   C:/Users/25756/Desktop/TinySTL/STL/util.h
 
@@ -409,6 +410,8 @@ C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/vadefs.h:
 C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/wchar.h:
 
 C:/Program\ Files/w64devkit/x86_64-w64-mingw32/include/wctype.h:
+
+C:/Users/25756/Desktop/TinySTL/STL/iterator.h:
 
 C:/Users/25756/Desktop/TinySTL/STL/type_traits.h:
 

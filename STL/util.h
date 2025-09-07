@@ -31,7 +31,7 @@ T&& forward(typename std::remove_reference<T>::type&& arg) noexcept {
 
 template <class Tp>
 void swap(Tp& lhs, Tp& rhs) {
-  auto tmp(tinystl::move(lhs));
+  auto tmp = tinystl::move(lhs);
   lhs = tinystl::move(rhs);
   rhs = tinystl::move(tmp);
 }
@@ -155,15 +155,86 @@ struct pair {
   explicit constexpr pair(pair<Other1, Other2>&& other) : first(std::forward<Other1>(other.first)),
                                                           second(std::forward<Other2>(other.second)) {}
 
+  pair& operator=(const pair& rhs) {
+    if (this != &rhs) {
+      first = rhs.first;
+      second = rhs.second;
+    }
+    return *this;
+  }
 
+  pair& operator=(pair&& rhs) {
+    if (this != &rhs) {
+      first = tinystl::move(rhs.first);
+      second = tinystl::move(rhs.second);
+    }
+    return *this;
+  }
 
+  template <class Other1, class Other2>
+  pair& operator=(const pair<Other1, Other2>& other) {
+    first = other.first;
+    second = other.second;
+    return *this;
+  }
 
+  // 完美转发
+  template <class Other1, class Other2>
+  pair& operator=(pair<Other1, Other2>&& other) {
+    first = tinystl::forward<Other1>(other.first);
+    second = tinystl::forward<Other2>(other.second);
+    return *this;
+  }
 
+  ~pair() = default;
 
+  void swap(pair& other) {
+    if (this != &other) {
+      tinystl::swap(first, other.first);
+      tinystl::swap(second, other.second);
+    }
+  }
 };
 
+template <class Ty1, class Ty2>
+bool operator==(const pair<Ty1, Ty2>& lhs, const pair<Ty1, Ty2>& rhs) {
+  return lhs.first == rhs.first && lhs.second == rhs.second;
+}
 
+template <class Ty1, class Ty2>
+bool operator<(const pair<Ty1, Ty2>& lhs, const pair<Ty1, Ty2>& rhs) {
+  return lhs.first < rhs.first || (lhs.first == rhs.first && lhs.second < rhs.second);
+}
 
+template <class Ty1, class Ty2>
+bool operator!=(const pair<Ty1, Ty2>& lhs, const pair<Ty1, Ty2>& rhs) {
+  return !(lhs == rhs);
+}
+
+template <class Ty1, class Ty2>
+bool operator>(const pair<Ty1, Ty2>& lhs, const pair<Ty1, Ty2>& rhs) {
+  return rhs < lhs;
+}
+
+template <class Ty1, class Ty2>
+bool operator<=(const pair<Ty1, Ty2>& lhs, const pair<Ty1, Ty2>& rhs) {
+  return !(lhs > rhs);
+}
+
+template <class Ty1, class Ty2>
+bool operator>=(const pair<Ty1, Ty2>& lhs, const pair<Ty1, Ty2>& rhs) {
+  return !(lhs < rhs);
+}
+
+template <class Ty1, class Ty2>
+void swap(pair<Ty1, Ty2>& lhs, pair<Ty1, Ty2>& rhs) {
+  lhs.swap(rhs);
+}
+
+template <class Ty1, class Ty2>
+pair<Ty1, Ty2> make_pair(Ty1&& first, Ty2&& second) {
+  return pair<Ty1, Ty2>(tinystl::forward<Ty1>(first), tinystl::forward<Ty2>(second));
+}
 
 }
 
